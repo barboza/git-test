@@ -1,0 +1,42 @@
+			else
+						if (this.value == 4) {
+							$('#contextFrequencia').html('<?php echo str_replace("\n", "", recorrenciaAnual()); ?>');
+						}
+		});
+		
+		$('#DateTerminaEm').change(function(){
+			$('#RecorrenciaSim').click();
+			$('#TerminaEm').click();
+		});
+		$('#TerminaAposDia').change(function(){
+			$('#RecorrenciaSim').click();
+			$('#TerminaApos').click();
+		});
+		$('#DateComecaEm').change(function(){
+			$('#RecorrenciaSim').click();
+		});
+		
+		<?php } ?>
+		
+	});
+</script>
+</head>
+
+<body>
+<?php
+	echo $html->scriptsIconHover();
+	echo $html->BemVindo();
+ 	include('includes/menu.php');
+ 	echo $html->menuBox();
+	echo $html->caminhoPage();
+?>
+<div id="padding">
+	
+<?php echo $html->inicioBorder('','block','890px'); //Inicia a Borda ******************************************* ?>
+
+<?php if($_GET['acao']== 'add'){
+	echo $html->TituloPagina('Adicionar Compromisso','SIM','','');
+}elseif($_GET['acao'] == 'edit'){
+	echo $html->TituloPagina('Alterar Compromisso','NAO','','');
+}
+?>
