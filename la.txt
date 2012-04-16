@@ -35,9 +35,11 @@
 <div id="padding">
 	
 <?php echo $html->inicioBorder('','block','890px'); //Inicia a Borda ******************************************* ?>
-
+teste de mod no mod
+teste la
+teste
 <?php if($_GET['acao']== 'add'){
-	echo $html->TituloPagina('Adicionar Compromisso','SIM','','');
+	echo $html->Titulo teste Pagina('Adicionar Compromisso','SIM','','');
 }elseif($_GET['acao'] == 'edit'){
 	echo $html->TituloPagina('Alterar Compromisso','NAO','','');
 }
