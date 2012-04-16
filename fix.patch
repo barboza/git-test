@@ -1,0 +1,30 @@
+From a53b4d4be840bd42a7e1d7a383525b24f1ff8588 Mon Sep 17 00:00:00 2001
+From: Rafael Barboza Cardoso <rafael@lnx-josemar.(none)>
+Date: Mon, 16 Apr 2012 16:41:43 -0300
+Subject: [PATCH] primeiro mod
+
+---
+ la.txt |    6 ++++--
+ 1 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/la.txt b/la.txt
+index cdf23bd..eb68afa 100644
+--- a/la.txt
++++ b/la.txt
+@@ -35,9 +35,11 @@
+ <div id="padding">
+ 	
+ <?php echo $html->inicioBorder('','block','890px'); //Inicia a Borda ******************************************* ?>
+-
++teste de mod no mod
++teste la
++teste
+ <?php if($_GET['acao']== 'add'){
+-	echo $html->TituloPagina('Adicionar Compromisso','SIM','','');
++	echo $html->Titulo teste Pagina('Adicionar Compromisso','SIM','','');
+ }elseif($_GET['acao'] == 'edit'){
+ 	echo $html->TituloPagina('Alterar Compromisso','NAO','','');
+ }
+-- 
+1.7.5.4
+
